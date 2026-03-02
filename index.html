@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Just For You | Luxury Beauty Parlour</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+<div class="logo">Just For You</div>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact" class="btn-nav">Book Now</a></li>
+<li><a href="admin.html">Admin</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+<div class="hero-content">
+<h1>Luxury Beauty Experience</h1>
+<p>Where Beauty Meets Perfection</p>
+<a href="#contact" class="btn">Book Appointment</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+<h2>Our Services</h2>
+<div class="cards">
+<div class="card" onclick="openPopup('HD Bridal Makeup with Premium Products')">💄 Bridal Makeup</div>
+<div class="card" onclick="openPopup('Trendy & Professional Hair Styling')">💇 Hair Styling</div>
+<div class="card" onclick="openPopup('Luxury Skin Care & Facial Treatment')">✨ Facials</div>
+<div class="card" onclick="openPopup('Creative Hena Designs')">Hena design</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section dark">
+<h2>Our Work</h2>
+<div class="gallery">
+<div class="gallery-item"><img src="/IMG-20260302-WA0005.jpg"></div>
+<div class="gallery-item"><img src="/IMG-20260302-WA0006.jpg"></div>
+<div class="gallery-item"><img src="/IMG-20260302-WA0007.jpg"></div>
+<div class="gallery-item"><img src="IMG-20260302-WA0008.jpg"></div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="section">
+<h2>Customer Reviews</h2>
+
+<form id="reviewForm">
+<input type="text" id="reviewName" placeholder="Your Name" required>
+
+<div class="stars">
+<span class="star" data-value="1">★</span>
+<span class="star" data-value="2">★</span>
+<span class="star" data-value="3">★</span>
+<span class="star" data-value="4">★</span>
+<span class="star" data-value="5">★</span>
+</div>
+
+<textarea id="reviewText" placeholder="Write your review" required></textarea>
+<button type="submit">Submit Review</button>
+</form>
+
+<div id="reviewList"></div>
+</section>
+
+<!-- BOOK APPOINTMENT -->
+<section id="contact" class="section dark">
+<h2>Book Appointment</h2>
+<form class="vertical-form">
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="date" required>
+<select required>
+<option>Select Service</option>
+<option>Bridal Makeup</option>
+<option>Hair Styling</option>
+<option>Facial</option>
+<option>Nail Art</option>
+</select>
+<textarea placeholder="Additional Message"></textarea>
+<button type="submit">Confirm Booking</button>
+</form>
+</section>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+<div class="popup-content">
+<span onclick="closePopup()">×</span>
+<p id="popupText"></p>
+</div>
+</div>
+<section id="instagramSection">
+  <div class="instagram-container">
+    <h2>Follow Me on Instagram</h2>
+    <p>Get the latest beauty tips, transformations & updates!</p>
+    <a href="https://www.instagram.com/makeup_by_sweety1?igsh=MWVnNGEzOHhvaHJ3Mw%3D%3D" target="_blank" class="instagram-button">
+      <i class="fab fa-instagram"></i> @makeup_by_sweety1
+    </a>
+  </div>
+</section>
+
+<a href="https://wa.me/919279948644" class="whatsapp" target="_blank">Chat</a>
+
+<script src="script.js"></script>
+</body>
+</html>
